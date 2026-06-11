@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="hg38" locus="chr17:88032-127059" version="8">
+    <Resources>
+        <Resource path="\\wsl.localhost\Ubuntu\home\pandu\anusree\chipseq_project\alignments\PMF.bw" type="bw"/>
+        <Resource path="\\wsl.localhost\Ubuntu\home\pandu\anusree\chipseq_project\peaks\peaks\PMF_vs_PMC_peaks.narrowPeak" type="narrowpeak"/>
+        <Resource path="\\wsl.localhost\Ubuntu\home\pandu\anusree\chipseq_project\alignments\PMC.bw" type="bw"/>
+    </Resources>
+    <Panel height="288" name="DataPanel" width="1517">
+        <Track attributeKey="PMC.bw" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="\\wsl.localhost\Ubuntu\home\pandu\anusree\chipseq_project\alignments\PMC.bw" name="PMC.bw" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="10.6713" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="PMF.bw" autoScale="true" clazz="org.broad.igv.track.DataSourceTrack" fontSize="10" id="\\wsl.localhost\Ubuntu\home\pandu\anusree\chipseq_project\alignments\PMF.bw" name="PMF.bw" renderer="BAR_CHART" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="26.3589" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="285" name="FeaturePanel" width="1517">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="10" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="+" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="Refseq Select" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;127.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/ncbiRefSeqSelect.txt.gz" name="Refseq Select" visible="true"/>
+        <Track attributeKey="PMF_vs_PMC_peaks.narrowPeak" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;20.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="\\wsl.localhost\Ubuntu\home\pandu\anusree\chipseq_project\peaks\peaks\PMF_vs_PMC_peaks.narrowPeak" name="PMF_vs_PMC_peaks.narrowPeak" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.5"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
