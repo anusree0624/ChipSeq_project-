@@ -4,48 +4,21 @@ This repository contains a complete ChIP-seq data analysis workflow, including q
 
 ---
 
-## 📁 chipseq_project
-chipseq_project/
-│
-├── raw/ # Raw sequencing data (FASTQ) - NOT uploaded to GitHub
-├── qc/ # Quality control reports (FastQC / MultiQC)
-├── alignments/ # Aligned reads (BAM/SAM) - excluded from GitHub
-├── Peak calling/ # MACS2 peak calling results
-├── annotation/ # Peak annotation results
-├── Functional Analysis/ # GO enrichment analysis
-├── KEGG Enrichment/ # KEGG pathway analysis
-├── MOTIF ANALYSIS/ # Motif discovery results
-├── TSS Enrichment/ # TSS enrichment plots
-├── target gene identification/ # Target gene mapping
-├── visualization/ # Genome browser tracks & plots
-├── reference/ # Reference genome & annotation files
-├── macs2_env/ # Conda environment (excluded from GitHub)
-│
-├── .gitignore
-└── README.md
-
-
 ## 🔬 Workflow Summary
 
-### 1. Quality Control
+1. Quality Control
 - FASTQ quality checked using FastQC and MultiQC
-
-### 2. Read Alignment
+2. Read Alignment
 - Reads aligned to reference genome using Bowtie2 / BWA
-
-### 3. Peak Calling
+3. Peak Calling
 - MACS3 used to identify enriched binding regions
-
-### 4. Annotation
+4. Annotation
 - Peaks mapped to nearest genes
-
-### 5. Functional Analysis
+5. Functional Analysis
 - GO and KEGG enrichment analysis performed
-
-### 6. Motif Analysis
+6. Motif Analysis
 - Identification of transcription factor binding motifs
-
-### 7. Visualization
+7. Visualization
 - Genome browser tracks and plots generated
 
 ---
