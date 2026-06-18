@@ -1,52 +1,75 @@
-# 🧬 ChIP-seq Analysis Project
+## 🧬 ChIP-seq Analysis of NR2F2 in HepG2 Cells
 
-This repository contains a complete ChIP-seq data analysis workflow, including quality control, alignment, peak calling, annotation, and downstream functional analysis.
+---
+
+## 📌 Project Overview
+
+This project focuses on the genome-wide identification of binding sites of the transcription factor **NR2F2** in the human liver cancer cell line **HepG2** using ChIP-seq data. The study follows a standard bioinformatics pipeline from raw sequencing data to biological interpretation.
+
+---
+
+## 🧾 Dataset Information
+
+* **Assay Type:** TF ChIP-seq
+* **Target:** NR2F2
+* **Organism:** *Homo sapiens*
+* **Cell Line:** HepG2
+* **Platform:** Illumina HiSeq 2000
+* **Nucleic Acid:** DNA
+* **Replication Type:** Isogenic
+* **Control Dataset:** ENCSR000BPH
+* **Description:** NR2F2 ChIP-seq protocol v042211.1 in HepG2 cells
 
 ---
 
 ## 🔬 Workflow Summary
 
-1. Quality Control
-- FASTQ quality checked using FastQC and MultiQC
-2. Read Alignment
-- Reads aligned to reference genome using Bowtie2 / BWA
-3. Peak Calling
-- MACS3 used to identify enriched binding regions
-4. Annotation
-- Peaks mapped to nearest genes
-5. Functional Analysis
-- GO and KEGG enrichment analysis performed
-6. Motif Analysis
-- Identification of transcription factor binding motifs
-7. Visualization
-- Genome browser tracks and plots generated
+* Quality control of raw sequencing reads
+* Alignment of reads to the human reference genome
+* Identification of NR2F2 binding peaks
+* Annotation of peaks to nearby genes and genomic regions
+* Functional enrichment analysis (GO and KEGG)
+* Motif discovery and transcription factor analysis
+* Visualization using genome browsers and plots
+
+---
+
+## 📊 Overall Results Summary
+
+* Raw sequencing data passed quality control with good read quality
+* High percentage of reads successfully aligned to the reference genome
+* Significant NR2F2 binding peaks were identified across the genome
+* Most peaks were enriched in regulatory regions such as promoters and introns
+* Functional analysis showed enrichment in gene regulation and signaling pathways
+* Motif analysis confirmed NR2F2 binding preferences and potential co-factors
+* Visualizations supported clear genome-wide binding patterns
 
 ---
 
 ## 🛠 Tools Used
 
-- FastQC
-- MultiQC
-- Bowtie2 / BWA
-- SAMtools
-- MACS3
-- BEDTools
-- HOMER / MEME Suite
-- R / Python
+* FastQC, MultiQC (Quality Control)
+* Bowtie2 / BWA, SAMtools (Alignment)
+* MACS3 (Peak Calling)
+* BEDTools, HOMER (Annotation)
+* R / Python (Functional Analysis)
+* HOMER, MEME Suite (Motif Analysis)
+* IGV, R, Python (Visualization)
 
 ---
 
-## 🚫 Files NOT included in GitHub
+## 🚫 Files Excluded
 
-Large files excluded via `.gitignore`:
-
-- raw FASTQ files
-- BAM/SAM alignment files
-- Conda environment (`macs2_env/`)
+* Raw FASTQ files
+* BAM/SAM alignment files
+* Large environment folders (e.g., conda/mac tools environments)
 
 ---
 
 ## 👩‍🔬 Author
 
-ANUSREE PATTAMSETTY || Bioinformatics student 
+**Anusree Pattamsetty**
+Bioinformatics Student
+
+---
 
